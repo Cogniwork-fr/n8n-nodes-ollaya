@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-ollaya",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Ollaya: ask typed questions to System One models and route items by the answer, with calibrated probabilities (unofficial fork of @typesafe-ai/n8n-nodes-typesafe-ai)",
 	"license": "MIT",
 	"homepage": "https://github.com/Cogniwork-fr/n8n-nodes-ollaya#readme",

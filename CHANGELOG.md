@@ -4,6 +4,14 @@ All notable changes to this package are documented in this file. The format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this
 package adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.2
+
+### Changed
+
+- The **Base URL** field of the credential is now visible and editable, so the
+  node can call a self-hosted Ollaya server as well as the TypeSafe AI API.
+- Rewrote the README.
+
 ## 1.0.0
 
 First release of the Ollaya fork by Cogniwork, based on `@typesafe-ai/n8n-nodes-typesafe-ai` 0.9.0.
