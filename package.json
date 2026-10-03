@@ -1,0 +1,68 @@
+{
+	"name": "n8n-nodes-ollaya",
+	"version": "1.0.0",
+	"description": "Ollaya: ask typed questions to System One models and route items by the answer, with calibrated probabilities (unofficial fork of @typesafe-ai/n8n-nodes-typesafe-ai)",
+	"license": "MIT",
+	"homepage": "https://github.com/Cogniwork-fr/n8n-nodes-ollaya#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"ollaya",
+		"cogniwork",
+		"jev",
+		"system-one",
+		"classification",
+		"routing",
+		"scoring",
+		"guardrails",
+		"ai"
+	],
+	"author": {
+		"name": "Cogniwork",
+		"email": "contact@cogniwork.fr"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cogniwork-fr/n8n-nodes-ollaya.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Cogniwork-fr/n8n-nodes-ollaya/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/OllayaApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Ollaya/Ollaya.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.48.6",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"typescript": "5.9.2",
+		"vitest": "^3.2.4"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
