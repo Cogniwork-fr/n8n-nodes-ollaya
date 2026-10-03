@@ -33,8 +33,10 @@ export class OllayaApi implements ICredentialType {
 		{
 			displayName: 'Base URL',
 			name: 'baseUrl',
-			type: 'hidden',
+			type: 'string',
 			default: DEFAULT_BASE_URL,
+			placeholder: 'https://api.typesafe.ai',
+			description: 'Server to call. Keep the default for the TypeSafe AI API, or enter the URL of your own server',
 		},
 	];
 
